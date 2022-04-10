@@ -2,8 +2,7 @@ import pygame
 
 class Tower():
     def __init__(self):
-        pass
+        self.levels = pygame.sprite.Group()
 
-class Level():
-    def __init__(self):
-        pass
+    def draw(self, surface):
+        self.levels.draw(surface)
